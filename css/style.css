@@ -81,6 +81,11 @@ nav a:hover{
 
 main{
   margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding:1rem;
 }
 
 footer {
@@ -109,6 +114,7 @@ img {
   width: 40%;
   border: 1px solid white;
   padding: 0.5em;
+  margin: 0.1em;
   transition: all 0.3s ease-out
 }
 
@@ -118,4 +124,17 @@ figure:hover img{
 
 figure:hover figcaption{
   color: var(--main-white);
+}
+
+p{
+  width: 40%;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
