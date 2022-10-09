@@ -138,3 +138,10 @@ section{
   justify-content: center;
   flex-direction: column;
 }
+
+h1{
+  width: 40%;
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
