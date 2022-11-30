@@ -265,6 +265,38 @@ aside {
   align-items: center;
 }
 
+/* contact form */
+form{
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  width: 70vw;
+}
+
+input, textarea{
+  font-family: "Lato", sans-serif;
+  color: var(--main-black);
+  width: 100%;
+  padding: 20px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  resize: vertical;
+}
+
+input[type=submit] {
+  font-family: "Lato", sans-serif;
+  background-color: transparent;
+  color: var(--main-white);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: transform 0.1s ease-out;
+}
+
+input[type=submit]:hover {
+  transform: scale(1.02);
+}
+
 /* tablet view */
 @media screen and (min-width: 768px) {
   nav {

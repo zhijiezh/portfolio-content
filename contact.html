@@ -2,12 +2,12 @@
 <html lang="en">
   <!-- All of the meta data for the page belongs in the header tag -->
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
+    <link rel="icon" href="images/favicon.ico" >
+    <link rel="stylesheet" href="css/html5reset.css" >
+    <link rel="stylesheet" href="css/style.css" >
     <title>Zhijie Zhao</title>
   </head>
 
@@ -22,13 +22,21 @@
     </header>
     <main>
       <h1>Contact me</h1>
-      <p>Hey, this is me, a poor guy who wants to take good photos, but fails to do so. If you are also interested in taking photographs or traveling, don't hesitate to contact me. I am also learning about portrait photography! I will be really happy if you allow me to capture the best moments of you. Although I don't have much experience and my skills are still very immature, I believe I will take some good photos one day. "I will keep working hard and make progress each day." Just like the saying I have remembered since I was a child.</p>
+      <p>
+        Hey, this is me, a poor guy who wants to take good photos, but fails to do so. If you are also interested in taking photographs or traveling, don't hesitate to contact me. I am also learning
+        about portrait photography! I will be really happy if you allow me to capture the best moments of you. Although I don't have much experience and my skills are still very immature, I believe I
+        will take some good photos one day. "I will keep working hard and make progress each day." Just like the saying I have remembered since I was a child.
+      </p>
       <figure>
-        <img class="shaking" src="./images/background.jpg" alt="Teddy Bear">
+        <img class="shaking" src="./images/background.jpg" alt="Teddy Bear" >
         <figcaption>My Teddy Bear</figcaption>
       </figure>
-      <p>Besides photography, I also have a lot of different hobbies. I enjoy working out at the gym. I usually go to NCRB twice a week for a workout. I play badminton on other days even though I am just a beginner. I also enjoy cooking food as I miss my hometown food after I came to the US. I have tried a lot different dishes. My specialty is sweet and sour pork ribs. I will make that dish once every month. If you come to my home, I will treat you with that. I am sure that you will like it.</p>
-      <p>Thanks a lot, you can find me through the following links: </p>
+      <p>
+        Besides photography, I also have a lot of different hobbies. I enjoy working out at the gym. I usually go to NCRB twice a week for a workout. I play badminton on other days even though I am
+        just a beginner. I also enjoy cooking food as I miss my hometown food after I came to the US. I have tried a lot different dishes. My specialty is sweet and sour pork ribs. I will make that
+        dish once every month. If you come to my home, I will treat you with that. I am sure that you will like it.
+      </p>
+      <p>Thanks a lot, you can find me through the following links or using the form below:</p>
       <div class="social-ul">
         <a href="https://www.linkedin.com/in/jerry-zhijie-zhao/" target="_blank" class="socialDetail">
           <i class="fab fa-linkedin"></i>
@@ -43,8 +51,29 @@
           Portfolio Website
         </a>
       </div>
+      <!-- modify this form HTML and place wherever you want your form -->
+      <form action="https://formspree.io/f/xwkzwana" method="POST">
+        <section class="name">
+          <label for="name">Your Name:</label>
+          <input type="text" name="name" id="name" placeholder="eg. Zhijie Zhao" >
+        </section>
+
+        <section class="email">
+          <label for="email">Your Email:</label>
+          <input type="text" name="email" id="email" placeholder="eg. jerry_shh@hotmail.com" >
+        </section>
+
+        <section class="note">
+          <label for="note">Additional Notes:</label>
+          <textarea id="note" name="note" rows="3" cols="20" placeholder="eg. I also like photography..."></textarea>
+        </section>
+
+        <section class="submission">
+          <input type="submit" value="Submit" >
+        </section>
+      </form>
     </main>
 
-    <footer>Made with <i class ="fas fa-heart"></i> by Zhijie Zhao &copy; 2022</footer>
+    <footer>Made with <i class="fas fa-heart"></i> by Zhijie Zhao &copy; 2022</footer>
   </body>
 </html>
