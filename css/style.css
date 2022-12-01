@@ -234,7 +234,7 @@ h1#home-header {
 }
 
 .shaking {
-  animation: shake 0.5s;
+  animation: shake 5s;
   animation-iteration-count: infinite;
 }
 
