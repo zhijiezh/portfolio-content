@@ -57,9 +57,9 @@ body {
 nav {
   background-color: var(--main-black);
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   align-items: center;
   padding: 1rem;
   position: fixed;
@@ -70,10 +70,6 @@ nav {
   z-index: 100;
   font-size: 2rem;
   grid-column: 1 / -1;
-}
-
-nav div {
-  padding: 0.2em;
 }
 
 nav a {
@@ -321,9 +317,12 @@ aside {
 /* tablet view */
 @media screen and (min-width: 768px) {
   nav {
-    flex-direction: row;
-    justify-content: flex-end;
+    grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
     height: 2rem;
+  }
+
+  #index-nav {
+    grid-column: 2 / 3;
   }
 
   h1 {
@@ -359,6 +358,11 @@ aside {
 
 /* desktop view */
 @media screen and (min-width: 1200px) {
+  nav {
+    grid-template-columns: 12fr 1fr 1fr 1fr 1fr;
+    height: 2rem;
+  }
+
   img.gallery-photo {
     width: 15vw;
   }
