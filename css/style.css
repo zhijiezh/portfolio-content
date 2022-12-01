@@ -46,9 +46,12 @@ body {
   background-color: var(--main-green);
   font-family: "Lato", sans-serif;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  grid-row-gap: 1em;
   min-height: 100vh;
+  justify-items: center;
 }
 
 nav {
@@ -101,6 +104,8 @@ footer {
   padding: 10px;
   text-align: center;
   margin-top: auto;
+  grid-column: 1/-1;
+  width: 90vw;
 }
 
 figure {
@@ -189,7 +194,7 @@ h1#home-header {
   justify-content: center;
   flex-direction: column;
   height: 80vh;
-  width: 80vw;
+  width: 80%;
   color: #fff;
   font-size: 5rem;
   padding: 2rem;
@@ -242,21 +247,7 @@ h1#home-header {
   }
 }
 
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 1em;
-  grid-row-gap: 1em;
-}
 
-aside {
-  padding: 0.2rem;
-  margin: 0.2rem;
-  font-size: 2rem;
-  line-height: 1.5;
-  text-align: center;
-  border: 1px solid white;
-}
 
 .flex-container {
   display: flex;
@@ -270,7 +261,7 @@ form{
   padding: 1rem;
   margin: 1rem;
   font-size: 2rem;
-  width: 70vw;
+  width: 70%;
 }
 
 input, textarea{
@@ -314,6 +305,19 @@ input[type=submit]:hover {
   top: 2.3em;
 }
 
+/* aside */
+
+aside {
+  background-image: url("../images/aside.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: repeat-y;
+  width: 10vw;
+  margin: 2rem;
+  margin-top: 6rem;
+  display: none;
+}
+
 /* tablet view */
 @media screen and (min-width: 768px) {
   nav {
@@ -331,19 +335,51 @@ input[type=submit]:hover {
     justify-content: space-around;
   }
   img.gallery-photo {
-    width: 40vw;
+    width: 25vw;
   }
   p {
-    width: 80vw;
+    width: 80%;
+  }
+
+  body{
+    grid-template-columns: 1fr 4fr;
+    column-gap: 3rem;
+    justify-items: center;
+  }
+
+  main{
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  aside#left-aside{
+    display: block;
+    grid-area: 1 / 1 / 2 / 2;
   }
 }
 
 /* desktop view */
 @media screen and (min-width: 1200px) {
   img.gallery-photo {
-    width: 30vw;
+    width: 15vw;
   }
   p {
-    width: 60vw;
+    width: 80%;
+  }
+  body{
+    grid-template-columns: 1fr 4fr 1fr;
+    column-gap: 3rem;
+  }
+
+  main{
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  aside#left-aside{
+    display: block;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  aside#right-aside{
+    display: block;
+    grid-area: 1 / 3 / 2 / 4;
   }
 }
