@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3C Website Test</title>
+    <!-- <script src="script.js" defer></script> -->
+</head>
+<body>
+    <a href="#" id="openTabs">Link to Tests</a>
+</body>
+</html>
+<script>
+  // List of URLs you want to open in separate tabs
+        const urls = [
+            'https://d3c.isr.umich.edu/software/calculate-the-sample-size-and-power-for-a-micro-randomized-trial-with-a-continuous-proximal-outcome/',
+            'https://d3c.isr.umich.edu/software/estimate-the-proximal-and-distal-causal-effects-of-a-just-in-time-intervention-component-on-a-continuous-outcome-using-data-from-a-micro-randomized-trial/',
+            'https://d3c.isr.umich.edu/software/power-calculation-for-the-mobile-assistance-for-regulating-smoking-mars-micro-randomized-trial/',
+            'https://github.com/d3center-isr/mrt-ss-calculator',
+            'https://github.com/d3center-isr/power-calc-mars-mrt',
+            'https://github.com/d3center-isr/mHealthModeration',
+        ];
+
+        for (const url of urls) {
+            window.open(url, '_blank');
+            console.log(url);
+        }
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('openTabs').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // List of URLs you want to open in separate tabs
+        const urls = [
+            'https://d3c.isr.umich.edu/software/calculate-the-sample-size-and-power-for-a-micro-randomized-trial-with-a-continuous-proximal-outcome/',
+            'https://d3c.isr.umich.edu/software/estimate-the-proximal-and-distal-causal-effects-of-a-just-in-time-intervention-component-on-a-continuous-outcome-using-data-from-a-micro-randomized-trial/',
+            'https://d3c.isr.umich.edu/software/power-calculation-for-the-mobile-assistance-for-regulating-smoking-mars-micro-randomized-trial/',
+            'https://github.com/d3center-isr/mrt-ss-calculator',
+            'https://github.com/d3center-isr/power-calc-mars-mrt',
+            'https://github.com/d3center-isr/mHealthModeration',
+        ];
+
+        for (const url of urls) {
+            window.open(url, '_blank');
+            console.log(url);
+        }
+    });
+});
+
+</script>
